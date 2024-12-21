@@ -70,7 +70,7 @@ public class AppointmentService {
         List<LocalTime> allSlots = generateTimeSlots(LocalTime.of(9, 0), LocalTime.of(17, 0), 30);
 
         return allSlots.stream()
-                .filter(slot -> !bookedSlots.contains(slot)) // Dolu olanları çıkar
+                .filter(slot -> !bookedSlots.contains(slot))
                 .map(LocalTime::toString)
                 .toList();
     }
