@@ -13,24 +13,24 @@ Frontend: Next.js (Optional Integration)
 # 💻 Setup and Installation
 Clone the Repository
 
-bash
-Kodu kopyala
+
+```bash
 git clone https://github.com/your-repo/appointment-system.git
 cd appointment-system
+```
 Setup Database
 
 Create a PostgreSQL database (e.g., appointment_db)
 Update application.properties with your database credentials.
 Build the Project
-
-bash
-Kodu kopyala
+```bash
 mvn clean install
 Run the Application
+```
 
-bash
-Kodu kopyala
+```bash
 mvn spring-boot:run
+```
 Access API Documentation
 
 Swagger UI: http://localhost:8080/swagger-ui.html
@@ -44,20 +44,19 @@ POST	/api/auth/refresh	Refresh JWT token
 GET	/api/auth/validateToken	Validate a token
 Example Payload for Login:
 
-json
-Kodu kopyala
+```json
 {
   "email": "user@example.com",
   "password": "securePassword"
 }
+```
 # 👤 2. User Endpoints
 Method	Endpoint	Description
 GET	/api/user	Get all users
 GET	/api/user/{email}	Get user by email
 Example Response:
 
-json
-Kodu kopyala
+```json
 {
   "userId": 1,
   "firstName": "John",
@@ -65,6 +64,7 @@ Kodu kopyala
   "email": "john@example.com",
   "role": "USER"
 }
+```
 # 🩺 3. Provider Endpoints
 Method	Endpoint	Description
 POST	/api/provider/add	Add a user as a provider
@@ -72,20 +72,19 @@ GET	/api/provider/getAllProviders	Get all providers
 GET	/api/provider/{providerId}	Get provider by ID
 Example Payload for Add Provider:
 
-json
-Kodu kopyala
+```json
 {
   "userId": 1
 }
 Example Response:
-
-json
-Kodu kopyala
+```
+```json
 {
   "providerId": 2,
   "firstName": "Alice",
   "lastName": "Smith"
 }
+```
 # 📅 4. Appointment Endpoints
 Method	Endpoint	Description
 POST	/api/appointments/create	Create a new appointment
@@ -93,8 +92,7 @@ GET	/api/appointments/{userId}	Get appointments by user ID
 GET	/api/appointments/availability/{providerId}	Get provider availability
 Example Payload for Create Appointment:
 
-json
-Kodu kopyala
+```json
 {
   "providerId": 2,
   "userId": 1,
@@ -104,10 +102,10 @@ Kodu kopyala
     "minute": 30
   }
 }
+```
 Example Response:
 
-json
-Kodu kopyala
+```json
 {
   "providerId": 2,
   "userId": 1,
@@ -117,6 +115,7 @@ Kodu kopyala
     "minute": 30
   }
 }
+```
 
 # Screenshots
 
