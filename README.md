@@ -25,8 +25,8 @@ Update application.properties with your database credentials.
 Build the Project
 ```bash
 mvn clean install
-Run the Application
 ```
+Run the Application
 
 ```bash
 mvn spring-boot:run
@@ -38,10 +38,10 @@ OpenAPI Docs: http://localhost:8080/v3/api-docs
 # 📡 API Endpoints
 # 🛡️ 1. Authentication Endpoints
 Method	Endpoint	Description
-POST	/api/auth/register	Register a new user
-POST	/api/auth/login	Login with credentials
-POST	/api/auth/refresh	Refresh JWT token
-GET	/api/auth/validateToken	Validate a token
+POST	/api/auth/register	Register a new user<br>
+POST	/api/auth/login	Login with credentials<br>
+POST	/api/auth/refresh	Refresh JWT token<br>
+GET	/api/auth/validateToken	Validate a token<br>
 Example Payload for Login:
 
 ```json
@@ -52,8 +52,8 @@ Example Payload for Login:
 ```
 # 👤 2. User Endpoints
 Method	Endpoint	Description
-GET	/api/user	Get all users
-GET	/api/user/{email}	Get user by email
+GET	/api/user	Get all users<br>
+GET	/api/user/{email}	Get user by email<br>
 Example Response:
 
 ```json
@@ -67,9 +67,9 @@ Example Response:
 ```
 # 🩺 3. Provider Endpoints
 Method	Endpoint	Description
-POST	/api/provider/add	Add a user as a provider
-GET	/api/provider/getAllProviders	Get all providers
-GET	/api/provider/{providerId}	Get provider by ID
+POST	/api/provider/add	Add a user as a provider<br>
+GET	/api/provider/getAllProviders	Get all providers<br>
+GET	/api/provider/{providerId}	Get provider by ID<br>
 Example Payload for Add Provider:
 
 ```json
@@ -87,9 +87,9 @@ Example Response:
 ```
 # 📅 4. Appointment Endpoints
 Method	Endpoint	Description
-POST	/api/appointments/create	Create a new appointment
-GET	/api/appointments/{userId}	Get appointments by user ID
-GET	/api/appointments/availability/{providerId}	Get provider availability
+POST	/api/appointments/create	Create a new appointment<br>
+GET	/api/appointments/{userId}	Get appointments by user ID<br>
+GET	/api/appointments/availability/{providerId}	Get provider availability<br>
 Example Payload for Create Appointment:
 
 ```json
