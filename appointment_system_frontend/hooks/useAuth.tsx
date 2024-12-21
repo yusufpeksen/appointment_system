@@ -35,12 +35,10 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       setAuthToken(token);
 
       try {
-        // `storedUser` JSON formatında mı kontrol et
         const parsedUser = JSON.parse(storedUser) as UserDetailsResponse;
         setUser(parsedUser);
       } catch (error) {
         console.error('Stored user is not valid JSON:', error);
-        // Hatalı veriyi temizle
         localStorage.removeItem('user');
       }
     }
@@ -49,21 +47,16 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const login = async (email: string, password: string) => {
     const response = await authService.login({ email, password });
 
-    // Token'ları kaydet
     localStorage.setItem('authToken', response.authToken);
     localStorage.setItem('refreshToken', response.refreshToken);
 
-    // Authorization header'ını ayarla
     setAuthToken(response.authToken);
 
-    // Kullanıcı bilgilerini al
     const userData = await userService.getUserDetails(email);
     setUser(userData);
 
-    // Kullanıcıyı JSON formatında localStorage'a kaydet
     localStorage.setItem('user', JSON.stringify(userData));
 
-    // Dashboard'a yönlendir
     router.push('/dashboard');
   };
 

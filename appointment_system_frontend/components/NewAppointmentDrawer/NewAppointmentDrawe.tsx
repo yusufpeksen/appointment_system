@@ -95,7 +95,7 @@ const NewAppointmentDrawer: React.FC<{ closeDrawer: () => void; refreshDashboard
       await appointmentService.createAppointment({
         providerId: Number(selectedProvider),
         userId: user?.userId || 0,
-        date: utcDate.toISOString().split('T')[0], // Tarih UTC formatında gönderiliyor
+        date: utcDate.toISOString().split('T')[0],
         time: selectedTime,
       });
 
@@ -121,7 +121,6 @@ const NewAppointmentDrawer: React.FC<{ closeDrawer: () => void; refreshDashboard
     <form onSubmit={handleSubmit}>
       <LoadingOverlay visible={loading} overlayProps={{ blur: 2 }} />
 
-      {/* Sağlayıcı seçimi */}
       <Select
         label="Provider"
         placeholder="Select a provider"
@@ -138,12 +137,11 @@ const NewAppointmentDrawer: React.FC<{ closeDrawer: () => void; refreshDashboard
         required
       />
 
-      {/* Tarih seçimi */}
       <DatePickerInput
         label="Date"
         placeholder="Select a date"
         value={selectedDate}
-        minDate={new Date()} // Geçmiş tarihler seçilemez
+        minDate={new Date()}
         onChange={(date) => {
           setSelectedDate(date);
           if (selectedProvider && date) fetchAvailableSlots(selectedProvider, date);
@@ -152,14 +150,13 @@ const NewAppointmentDrawer: React.FC<{ closeDrawer: () => void; refreshDashboard
         mt="md"
       />
 
-      {/* Saat seçimi */}
       <Select
         label="Time Slot"
         placeholder="Select a time slot"
         data={hours.map((hour) => ({
           value: hour,
           label: hour,
-          disabled: !availableSlots.includes(hour) || isPastTime(hour), // Dolu ve geçmiş saatleri devre dışı bırak
+          disabled: !availableSlots.includes(hour) || isPastTime(hour),
         }))}
         value={selectedTime}
         onChange={setSelectedTime}
@@ -167,7 +164,6 @@ const NewAppointmentDrawer: React.FC<{ closeDrawer: () => void; refreshDashboard
         mt="md"
       />
 
-      {/* Gönder butonu */}
       <Group align="right" mt="xl">
         <Button type="submit">Book Appointment</Button>
       </Group>

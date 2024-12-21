@@ -7,7 +7,7 @@ import providerService, { Provider } from '@/client/providerService';
 import { useAuth } from '@/hooks/useAuth';
 
 interface AppointmentWithProviderName extends Appointment {
-  providerName?: string; // Ek alan
+  providerName?: string;
 }
 
 const AppointmentList: React.FC = () => {

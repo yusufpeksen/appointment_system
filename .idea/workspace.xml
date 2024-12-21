@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a8938617-3eee-450a-a040-82ad8a84fbf4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/appointment_system_backend/src/main/java/com/yusufpeksen/appointment_system/config/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/appointment_system_backend/src/main/java/com/yusufpeksen/appointment_system/config/JwtFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appointment_system_backend/src/main/java/com/yusufpeksen/appointment_system/config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/appointment_system_backend/src/main/java/com/yusufpeksen/appointment_system/config/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appointment_system_backend/src/main/java/com/yusufpeksen/appointment_system/controller/ProviderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/appointment_system_backend/src/main/java/com/yusufpeksen/appointment_system/controller/ProviderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appointment_system_backend/src/main/java/com/yusufpeksen/appointment_system/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/appointment_system_backend/src/main/java/com/yusufpeksen/appointment_system/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appointment_system_backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/appointment_system_backend/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appointment_system_frontend/.github/workflows/npm_test.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appointment_system_frontend/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/appointment_system_frontend/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appointment_system_frontend/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/appointment_system_frontend/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appointment_system_frontend/components/ColorSchemeToggle/ColorSchemeToggle.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appointment_system_frontend/components/Welcome/Welcome.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appointment_system_frontend/components/Welcome/Welcome.story.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appointment_system_frontend/components/Welcome/Welcome.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appointment_system_frontend/components/Welcome/Welcome.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appointment_system_frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/appointment_system_frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appointment_system_frontend/public/favicon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/appointment_system_frontend/public/favicon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appointment_system_frontend/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/appointment_system_frontend/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/appointment_system_backend" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2qWOFSQD0j3ggwXtWYJ3MFAn5c4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Yusuf/Desktop/Software/appointment_system/appointment_system_backend"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a8938617-3eee-450a-a040-82ad8a84fbf4" name="Changes" comment="" />
+      <created>1734774762011</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1734774762011</updated>
+    </task>
+    <servers />
+  </component>
+</project>

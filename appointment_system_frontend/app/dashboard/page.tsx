@@ -9,9 +9,8 @@ import requireAuth from '@/utils/requireAuth';
 const Dashboard: React.FC = () => {
   const [drawerOpened, setDrawerOpened] = useState(false);
 
-  // Dashboard'ı yenilemek için bir fonksiyon tanımlayın
   const refreshDashboard = () => {
-    window.location.reload(); // Sayfayı yenileyerek listeyi güncelle
+    window.location.reload();
   };
 
   return (
